@@ -43,18 +43,20 @@ El hook useAxios también incluye PropTypes para asegurar que los parámetros se
 
 javascript
 Copy code
+```
 useAxios.propTypes = {
   url: PropTypes.string.isRequired,
   method: PropTypes.string,
   options: PropTypes.object,
   cacheSize: PropTypes.number
 };
-
+```
 # Ejemplo completo
 Aquí hay un ejemplo completo de cómo utilizar el hook useAxios en un componente de React:
 
 javascript
 Copy code
+```
 import React from 'react';
 import useAxios from 'useAxios';
 
@@ -87,4 +89,4 @@ const App = () => {
   );
 };
 
-export
+```
