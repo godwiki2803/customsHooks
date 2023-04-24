@@ -1,13 +1,13 @@
 #Hook personalizado useAxios
 El hook personalizado useAxios es una utilidad de React que te permite hacer llamadas a una API de manera sencilla y eficiente. Este hook utiliza la librería axios para realizar las solicitudes HTTP y tiene un sistema de caché basado en el tamaño del caché LRU.
 
-##Instalación
+## Instalación
 Para instalar useAxios en tu proyecto, simplemente ejecuta el siguiente comando:
 
 bash
 Copy code
 npm install axios lru-cache prop-types
-#Uso
+# Uso
 Para utilizar el hook useAxios, primero importa el hook en el componente donde lo vayas a utilizar:
 
 javascript
@@ -28,7 +28,7 @@ También puedes especificar el tamaño de la caché como cuarto argumento. El ta
 javascript
 Copy code
 const { response, error, isLoading, networkError, serverError } = useAxios('https://ejemplo.com/api/datos', 'get', {}, 50);
-#Propiedades
+# Propiedades
 El hook useAxios devuelve un objeto que contiene las siguientes propiedades:
 
 response: el resultado de la solicitud HTTP.
@@ -47,7 +47,8 @@ useAxios.propTypes = {
   options: PropTypes.object,
   cacheSize: PropTypes.number
 };
-#Ejemplo completo
+
+# Ejemplo completo
 Aquí hay un ejemplo completo de cómo utilizar el hook useAxios en un componente de React:
 
 javascript
