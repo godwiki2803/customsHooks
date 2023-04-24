@@ -3,10 +3,12 @@ El hook personalizado useAxios es una utilidad de React que te permite hacer lla
 
 # Instalación
 Para instalar useAxios en tu proyecto, simplemente ejecuta el siguiente comando:
-
+```
 bash
 Copy code
 npm install axios lru-cache prop-types
+```
+
 # Uso
 Para utilizar el hook useAxios, primero importa el hook en el componente donde lo vayas a utilizar:
 
