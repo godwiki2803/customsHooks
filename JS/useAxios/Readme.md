@@ -14,22 +14,26 @@ Para utilizar el hook useAxios, primero importa el hook en el componente donde l
 
 javascript
 Copy code
+```
 import useAxios from 'useAxios';
+```
 Luego, llama al hook en tu componente y pasa la URL de la API como primer argumento:
 
 javascript
 Copy code
 ```
 const { response, error, isLoading, networkError, serverError } = useAxios('https://ejemplo.com/api/datos');
-Puedes pasar un método HTTP diferente al método predeterminado GET como segundo argumento y opciones adicionales para la solicitud como tercer argumento.
 ```
+Puedes pasar un método HTTP diferente al método predeterminado GET como segundo argumento y opciones adicionales para la solicitud como tercer argumento.
+
 
 javascript
 Copy code
 ```
 const { response, error, isLoading, networkError, serverError } = useAxios('https://ejemplo.com/api/datos', 'post', { data: { nombre: 'Juan', edad: 25 } });
-También puedes especificar el tamaño de la caché como cuarto argumento. El tamaño predeterminado de la caché es 100.
 ```
+También puedes especificar el tamaño de la caché como cuarto argumento. El tamaño predeterminado de la caché es 100.
+
 
 javascript
 Copy code
